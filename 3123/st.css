@@ -7,19 +7,26 @@
 body {
     font-family: Arial, sans-serif;
     display: flex;
-    background-color: #a8fc81;
+    background: linear-gradient(
+        217deg,
+        rgb(255 0 0 / 80%),
+        rgb(255 0 0 / 0%) 70.71%
+      ),
+      linear-gradient(127deg, rgb(0 255 0 / 80%), rgb(0 255 0 / 0%) 70.71%),
+      linear-gradient(336deg, rgb(0 0 255 / 80%), rgb(0 0 255 / 0%) 70.71%);
+
 }
 
 .sidebar {
-    width: 100px; /* Начальная ширина меню */
+    width: 200px; /* Начальная ширина меню */
     height: 100vh; /* Высота меню на всю высоту окна */
     background-color: #1a5300;
     overflow: hidden; /* Скрытие содержимого, выходящего за границы */
-    transition: width 0.1s; /* Плавное изменение ширины */
+    transition: width 2s; /* Плавное изменение ширины */
 }
 
 .sidebar:hover {
-    width: 200px; /* Полная ширина при наведении */
+    width: 300px; /* Полная ширина при наведении */
 }
 
 .menu {
